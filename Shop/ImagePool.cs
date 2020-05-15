@@ -31,7 +31,7 @@ namespace Shop
             //im.Height = 256;
             //im.Stretch = System.Windows.Media.Stretch.Fill;
 
-            im.Source = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\images\\" + name + ".jpg", UriKind.Absolute));
+            im.Source = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "..\\..\\images\\" + name + ".jpg", UriKind.Absolute));
             images.Add(name, im);
         }
 

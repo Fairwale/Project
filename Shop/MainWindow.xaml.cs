@@ -37,7 +37,7 @@ namespace Shop
             text2.Text = customer.Money.ToString();
 
             ImagePool pool = new ImagePool();
-            foreach(string s in Directory.GetFiles("images"))
+            foreach(string s in Directory.GetFiles("../../images"))
             {
                 string name = s.Substring(s.IndexOf("\\") + 1);
                 name = name.Substring(0, name.IndexOf(".jpg"));
