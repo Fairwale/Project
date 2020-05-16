@@ -16,7 +16,7 @@ namespace Shop
 
         }
 
-        public override void Update(Dictionary<string, int> cart, string name, int money)
+        public override void Update(Dictionary<string, int> cart, string name, double money)
         {
             try
             {

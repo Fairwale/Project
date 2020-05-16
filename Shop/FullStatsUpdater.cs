@@ -18,7 +18,7 @@ namespace Shop
     {
         public string Time { get; set; }
         public string Name { get; set; }
-        public int Cost { get; set; }
+        public double Cost { get; set; }
         public Dictionary<string, int> Goods { get; set; } = new Dictionary<string, int>();
     }
 
@@ -29,7 +29,7 @@ namespace Shop
 
         }
 
-        public override void Update(Dictionary<string, int> cart, string name, int money)
+        public override void Update(Dictionary<string, int> cart, string name, double money)
         {
             try
             {

@@ -25,6 +25,8 @@ namespace Shop
         private Customer customer;
         private double money = 0;
         private Dictionary<string, int> cart = new Dictionary<string, int>();
+        private FullStatsUpdater updater = new FullStatsUpdater("../../sells.json");
+        private ShortStatsUpdater updaterShort = new ShortStatsUpdater("../../sells_short.json");
 
         public MainWindow()
         {
@@ -125,6 +127,9 @@ namespace Shop
         {
             if(customer.Money >= money)
             {
+                updater.Update(cart, customer.Name, money);
+                updaterShort.Update(cart, customer.Name, money);
+
                 customer.updateCredits(money);
                 text2.Text = customer.Money.ToString();
 
