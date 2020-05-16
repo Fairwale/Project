@@ -32,7 +32,7 @@ namespace Shop
 
             Background = (Brush) new BrushConverter().ConvertFromString(SettingsManager.BackgroundColor);
 
-            customer = new Customer(GetRandomName(), 2000);
+            customer = new PrivilegedCustomer(GetRandomName(), 2000);
             text1.Text = customer.Name;
             text2.Text = customer.Money.ToString();
 
