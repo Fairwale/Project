@@ -30,14 +30,14 @@ namespace Shop
                         Cost = money
                     };
 
-                    Obj2 obj = new Obj2();
+                    SellsList obj = new SellsList();
                     obj.Sells.Add(s);
 
                     File.WriteAllText(FilePath, JsonConvert.SerializeObject(obj));
                 }
                 else
                 {
-                    Obj2 obj = JsonConvert.DeserializeObject<Obj2>(File.ReadAllText(FilePath));
+                    SellsList obj = JsonConvert.DeserializeObject<SellsList>(File.ReadAllText(FilePath));
 
                     string time = DateTime.Now.Day + "." + DateTime.Now.Month + "." + DateTime.Now.Year + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute;
                     Sell s = new Sell()

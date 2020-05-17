@@ -9,7 +9,7 @@
     <Grid>
         <Label Content="Пароль:" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="23" Margin="78,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Отобразить информацию" HorizontalAlignment="Left" Margin="218,16,0,0" VerticalAlignment="Top" Width="155" Height="23"/>
+        <Button Content="Отобразить информацию" HorizontalAlignment="Left" Margin="218,16,0,0" VerticalAlignment="Top" Width="155" Height="23" Click="Button_Click"/>
         <CheckBox x:Name="cb1" Content="Компактный вид" HorizontalAlignment="Left" Margin="390,21,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lb1" HorizontalAlignment="Left" Height="503" Margin="10,57,0,0" VerticalAlignment="Top" Width="574"/>
 
