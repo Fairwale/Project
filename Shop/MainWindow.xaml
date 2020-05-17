@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Магазин" Height="650" Width="600">
     <Grid>
+        <Menu HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="584" Margin="0,0,0,0">
+            <MenuItem Name="AdminStats" Header="Admin Stats" Click="AdminStats_Click"></MenuItem>
+        </Menu>
         <Label Content="Покупатель:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="92,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <Label Content="Деньги:" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top"/>

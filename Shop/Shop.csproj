@@ -58,12 +58,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminStatsWindow.xaml.cs">
+      <DependentUpon>AdminStatsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FullStatsUpdater.cs" />
     <Compile Include="ImagePool.cs" />
     <Compile Include="PrivilegedCustomer.cs" />
     <Compile Include="SettingsManager.cs" />
     <Compile Include="ShortStatsUpdater.cs" />
     <Compile Include="StatsUpdater.cs" />
+    <Page Include="AdminStatsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -123,6 +123,12 @@ namespace Shop
             }
         }
 
+        private void AdminStats_Click(object sender, RoutedEventArgs e)
+        {
+            AdminStatsWindow w = new AdminStatsWindow();
+            w.Show();
+        }
+
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             if(customer.Money >= money)
