@@ -23,7 +23,7 @@ namespace Shop
         {
             try
             {
-                string str = File.ReadAllText("settings.cfg");
+                string str = File.ReadAllText("../../settings.cfg");
                 BackgroundColor = str.Substring(str.IndexOf(":") + 2);
 
                 Obj deserialized = JsonConvert.DeserializeObject<Obj>(File.ReadAllText("../../goods.json"));
